@@ -1,0 +1,175 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 100px;
+}
+
+footer {
+    background: #6fc5d2;
+    width: 100%;
+    height: 200px;
+    display: none;
+}
+
+header {
+    background: #fdee21;
+    width: 23%;
+}
+
+nav {
+    background: #ff931e;
+    width: 75%;
+}
+
+.ad-banner > article {
+    background: #d6406d;
+    width: 100%;
+    height: 75px;
+}
+
+.articles > article {
+    background: #6fc5d2;
+    width: 100%;
+    height: 300px;
+}
+
+.news {
+    background: #fff;
+    width: 33%;
+    height: 200px;
+    align-content: space-between;
+}
+
+.news > section {
+    background: #b9b9b9;
+    width: 100%;
+    height: 17px;
+}
+
+.sections > section {
+    background: #6fc5d2;
+    width: 33%;
+    height: 200px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.mx-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.mt-1 {
+    margin-top: 1rem;
+}
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+ }
+
+@media screen and (max-width: 1024px) {
+    .sections > section {
+        width: 32%;
+        height: 300px;
+    }
+    .news {
+        height: 300px;
+    }
+ }
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 120px;
+    }
+    .articles > article {
+        width: 100%;
+    }
+    .news {
+        height: 400px;
+    }
+    .news > section {
+        height: 23px;
+    }
+    .sections {
+        flex-direction: row;
+    }
+    .sections > section {
+        width: 32%;
+        height: 400px;
+    }
+    footer {
+        display: block;
+    }
+  }
+
+
+@media screen and (max-width: 480px) { 
+    .articles {
+        height: 300px;
+    }
+    .news {
+        width: 100%;
+    }
+    .sections {
+        flex-direction: column;
+        height: 800px;
+    }
+    .sections > section {
+        width: 100%;
+        height: 250px;
+        margin-top: 20px;
+    }
+ }
+
+ @media screen and (max-width: 320px) {
+    .header {
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+    }
+    header {
+        background: #fdee21;
+        width: 100%;
+        height: 90px;
+    }
+    nav {
+        background: #ff931e;
+        width: 100%;
+        height: 90px;
+    } 
+    .articles {
+        height: 300px;
+    }
+    .news {
+        width: 100%;
+    }
+    .sections {
+        flex-direction: column;
+        height: 800px;
+    }
+    .sections > section {
+        width: 100%;
+        height: 250px;
+        margin-top: 20px;
+    }
+ }
